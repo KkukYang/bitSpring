@@ -19,7 +19,10 @@
 	</bean>
 
 	<bean id="oraclesource" class="ex4.test.DataSource">
-		<constructor-arg ref="oracle"/>
+		<!--constructor-->
+		<!--<constructor-arg ref="oracle"/>-->
+
+		<!--getter,setter-->
 		<property name="server" ref="oracle"></property>
 	</bean>
 
