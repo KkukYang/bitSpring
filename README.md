@@ -1,2 +1,0 @@
-# bitSpring
-sts3
