@@ -24,7 +24,7 @@ public class HelloController {
         return "result1";   //forward is fileName
     }
 
-    @RequestMapping("/2") // if skip this format then operate GET method.
+    @RequestMapping("/my") // if skip this format then operate GET method.
     public ModelAndView two() {
         ModelAndView model = new ModelAndView();
         model.addObject("emp", "samsung");
@@ -36,7 +36,7 @@ public class HelloController {
         return model;
     }
 
-    @GetMapping("/3")    // Mapping my GET method (spring version 5)
+    @GetMapping("/my/hello")    // Mapping my GET method (from spring version 5 or higher)
     public String three(Model model, HttpSession session) {
         model.addAttribute("msg", "three method.");
         session.setAttribute("login", "ok");

@@ -24,7 +24,4 @@
 	</beans:bean>
 
 	<context:component-scan base-package="day1215_web.*" />
-
-
-
 </beans:beans>
