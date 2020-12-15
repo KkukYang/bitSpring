@@ -1,4 +1,4 @@
-package day1215.ex1;
+package day1215_di.ex1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,6 +1,5 @@
-package day1215.ex2;
+package day1215_di.ex2;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

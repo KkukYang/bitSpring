@@ -1,4 +1,4 @@
-package day1215.ex2;
+package day1215_di.ex2;
 
 import java.util.List;
 

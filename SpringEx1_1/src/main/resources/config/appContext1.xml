@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <bean id="hobby" class="day1215.ex1.Hobby">
+    <bean id="hobby" class="day1215_di.ex1.Hobby">
         <constructor-arg value="임영웅"/>
         <constructor-arg>
             <list>
@@ -17,7 +17,7 @@
         </constructor-arg>
     </bean>
 
-    <bean id="student2" class="day1215.ex2.Student">
+    <bean id="student2" class="day1215_di.ex2.Student">
         <constructor-arg value="임영웅"/>
         <constructor-arg value="34"/>
         <constructor-arg>
@@ -30,7 +30,7 @@
         <property name="weight" value="66.6"></property>
     </bean>
 
-    <bean class="day1215.ex2.ApplicationConfig"/>
+    <bean class="day1215_di.ex2.ApplicationConfig"/>
     <context:annotation-config/>
 
 </beans>
