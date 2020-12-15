@@ -1,4 +1,4 @@
-package ex2.test;
+package day1214.ex2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

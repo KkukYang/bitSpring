@@ -1,4 +1,4 @@
-package ex3.test;
+package day1214.ex3;
 
 public class Student {
     String name;

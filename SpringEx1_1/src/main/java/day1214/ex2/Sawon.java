@@ -1,4 +1,4 @@
-package ex2.test;
+package day1214.ex2;
 
 public class Sawon {
     String name, hp, addr;

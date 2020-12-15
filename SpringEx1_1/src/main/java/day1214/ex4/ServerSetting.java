@@ -1,4 +1,4 @@
-package ex4.test;
+package day1214.ex4;
 
 public class ServerSetting {
 	String driverClass;

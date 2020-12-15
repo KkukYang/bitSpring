@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="oracle" class="ex4.test.ServerSetting">
-		<constructor-arg>
-			<value>oracle.jdbc.OracleDriver</value>
-		</constructor-arg>
-		<property name="url">
-			<value>jdbc:oracle:thin:@localhost:1521:xe</value>
-		</property>
-		<property name="userName">
-			<value>angel</value>
-		</property>
-		<property name="passWord">
-			<value>a1234</value>
-		</property>
-	</bean>
+    <bean id="oracle" class="day1214.ex4.ServerSetting">
+        <constructor-arg>
+            <value>oracle.jdbc.OracleDriver</value>
+        </constructor-arg>
+        <property name="url">
+            <value>jdbc:oracle:thin:@localhost:1521:xe</value>
+        </property>
+        <property name="userName">
+            <value>angel</value>
+        </property>
+        <property name="passWord">
+            <value>a1234</value>
+        </property>
+    </bean>
 
-	<bean id="oraclesource" class="ex4.test.DataSource">
-		<!--constructor-->
-		<!--<constructor-arg ref="oracle"/>-->
+    <bean id="oraclesource" class="day1214.ex4.DataSource">
+        <!--constructor-->
+        <!--<constructor-arg ref="oracle"/>-->
 
-		<!--getter,setter-->
-		<property name="server" ref="oracle"></property>
-	</bean>
+        <!--getter,setter-->
+        <property name="server" ref="oracle"></property>
+    </bean>
+
 
 </beans>
