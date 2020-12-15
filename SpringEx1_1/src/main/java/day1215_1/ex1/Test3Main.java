@@ -9,7 +9,8 @@ public class Test3Main {
         ApplicationContext context
                 = new ClassPathXmlApplicationContext("config/1215_1_ex1_appContext.xml");
 
-        ListController listCont = (ListController)context.getBean("list");
+//        ListController listCont = (ListController)context.getBean("list");
+        ListController listCont = (ListController)context.getBean("listController");
         listCont.process();
     }
 }
