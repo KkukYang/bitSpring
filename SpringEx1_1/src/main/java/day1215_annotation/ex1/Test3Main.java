@@ -1,6 +1,5 @@
-package day1215_1.ex1;
+package day1215_annotation.ex1;
 
-import day1215.ex2.ApplicationConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

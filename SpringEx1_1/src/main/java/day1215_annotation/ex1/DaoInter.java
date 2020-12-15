@@ -1,4 +1,4 @@
-package day1215_1.ex1;
+package day1215_annotation.ex1;
 
 public interface DaoInter {
     public void insertData(String str);

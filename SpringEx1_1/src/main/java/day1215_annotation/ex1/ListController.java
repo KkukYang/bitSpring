@@ -1,4 +1,4 @@
-package day1215_1.ex1;
+package day1215_annotation.ex1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
