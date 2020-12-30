@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="hello" class="day1214.ex1.Hello" scope="prototype"/>
+
+    <!-- 사원등록 -->
+    <bean id="sawon" class="day1214.ex2.Sawon">
+        <!--constructor value is param-->
+        <!--<constructor-arg value="강호동"></constructor-arg>-->
+
+        <!--이것도 가능. name is paramName-->
+        <constructor-arg name="name">
+            <value>강호동</value>
+        </constructor-arg>
+
+        <!--property member value-->
+        <property name="hp">
+            <value>010-1234-1234</value>
+        </property>
+        <property name="addr">
+            <value>asdfasdfasdf</value>
+        </property>
+    </bean>
+
+    <bean id="sawon2" class="day1214.ex2.Sawon">
+        <constructor-arg value="강민수"></constructor-arg>
+        <property name="hp">
+            <value>010-4566-4566</value>
+        </property>
+        <property name="addr">
+            <value>zxcvzxcvzxcv</value>
+        </property>
+    </bean>
+
+    <bean id="emp" class="day1214.ex2.EmpPay">
+        <!--ref is classObj by param-->
+        <constructor-arg ref="sawon2"/>
+        <property name="pay" value="3456789"/>
+    </bean>
+
+</beans>

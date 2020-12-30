@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="spring.dto.MyCarDto" alias="cdto"/>  <!--별명 지어줌-->
+        <typeAlias type="spring.dto.MemberDto" alias="mdto"/>  <!--별명 지어줌-->
+        <typeAlias type="spring.dto.ReBoardDto" alias="bdto"/>  <!--별명 지어줌-->
+    </typeAliases>
+    <mappers>
+        <mapper resource="mybatis/setting/CarSql.xml"/>
+        <mapper resource="mybatis/setting/MemberSql.xml"/>
+        <mapper resource="mybatis/setting/BoardSql.xml"/>
+    </mappers>
+</configuration>

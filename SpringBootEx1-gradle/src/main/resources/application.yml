@@ -1,0 +1,4 @@
+#.properties 에서.
+#server.port=9001 
+server:
+  port: 9001

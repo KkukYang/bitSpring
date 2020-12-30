@@ -1,0 +1,23 @@
+#.properties 에서.
+#server.port=9001 
+server:
+  port: 9001
+  
+#jsp
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/shop/
+      suffix: .jsp
+  devtools:
+    livereload:
+      enabled: true
+      
+#mysql
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/java0901?serverTimezone=Asia/Seoul
+    username: java
+    password: 1234
+    
+
