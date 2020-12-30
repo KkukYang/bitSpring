@@ -45,6 +45,8 @@ public class BoardWriteController {
 
 	@PostMapping("/board/write")
 	public String write(HttpServletRequest request, @ModelAttribute ReBoardDto dto, @RequestParam String pageNum) {
+		System.out.println("dto.pass:"+dto.getPass());
+
 		String path = request.getSession().getServletContext().getRealPath("/WEB-INF/save");
 		String upload = "";
 		SpringFileWriter writer = new SpringFileWriter();

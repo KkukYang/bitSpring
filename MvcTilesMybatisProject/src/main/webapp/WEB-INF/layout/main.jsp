@@ -20,6 +20,7 @@ ${root }<br>
 
 <img src="${root}/image/c5.png">
 <img src="${root}/image/c6.png">
+<img src="${root}/image/re.ico">
 
 </body>
 </html>

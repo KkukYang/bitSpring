@@ -15,8 +15,8 @@ public class MemberDto {
 	private String photos;
 	private Timestamp gaipday;
 	private String mainphoto;
-	
-	
+
+
 	public String getMainphoto() {
 		return mainphoto;
 	}
@@ -29,7 +29,7 @@ public class MemberDto {
 	public void setUpload(List<MultipartFile> upload) {
 		this.upload = upload;
 	}
-	
+
 	public String getNum() {
 		return num;
 	}
@@ -72,6 +72,6 @@ public class MemberDto {
 	public void setGaipday(Timestamp gaipday) {
 		this.gaipday = gaipday;
 	}
-	
-	
+
+
 }

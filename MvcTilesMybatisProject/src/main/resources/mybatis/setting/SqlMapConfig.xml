@@ -5,10 +5,14 @@
         <typeAlias type="spring.dto.MyCarDto" alias="cdto"/>  <!--별명 지어줌-->
         <typeAlias type="spring.dto.MemberDto" alias="mdto"/>  <!--별명 지어줌-->
         <typeAlias type="spring.dto.ReBoardDto" alias="bdto"/>  <!--별명 지어줌-->
+        <typeAlias type="spring.dto.ReAnswerDto" alias="adto"/>  <!--별명 지어줌-->
+        <typeAlias type="spring.dto.ProductDto" alias="pdto"/>  <!--별명 지어줌-->
     </typeAliases>
     <mappers>
         <mapper resource="mybatis/setting/CarSql.xml"/>
         <mapper resource="mybatis/setting/MemberSql.xml"/>
         <mapper resource="mybatis/setting/BoardSql.xml"/>
+        <mapper resource="mybatis/setting/AnswerSql.xml"/>
+        <mapper resource="mybatis/setting/ProductSql.xml"/>
     </mappers>
 </configuration>

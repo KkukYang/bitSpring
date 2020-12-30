@@ -7,125 +7,130 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class ReBoardDto {
 
-	private String num;
-	private String writer;
-	private String pass;
-	private String subject;
-	private String content;
-	private String upload;
-	private List<MultipartFile> files;
-	private int readcount;
-	private int regroup;
-	private int restep;
-	private int relevel;
-	private Timestamp writeday;
+    private String num;
+    private String writer;
+    private String pass;
+    private String subject;
+    private String content;
+    private String upload;
+    private List<MultipartFile> files;
+    private int readcount;
+    private int regroup;
+    private int restep;
+    private int relevel;
+    private Timestamp writeday;
+    private int cnt;//댓글 갯수 저장.
 
-	public String getNum() {
-		return num;
-	}
+    public int getCnt() {
+        return cnt;
+    }
 
-	public void setNum(String num) {
-		this.num = num;
-	}
+    public void setCnt(int cnt) {
+        this.cnt = cnt;
+    }
 
-	public String getWriter() {
-		return writer;
-	}
+    public String getNum() {
+        return num;
+    }
 
-	public void setWriter(String writer) {
-		this.writer = writer;
-	}
+    public void setNum(String num) {
+        this.num = num;
+    }
 
-	public String getPass() {
-		return pass;
-	}
+    public String getWriter() {
+        return writer;
+    }
 
-	public void setPass(String pass) {
-		this.pass = pass;
-	}
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
 
-	public String getSubject() {
-		return subject;
-	}
+    public String getPass() {
+        return pass;
+    }
 
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public String getSubject() {
+        return subject;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
-	public String getUpload() {
-		return upload;
-	}
+    public String getContent() {
+        return content;
+    }
 
-	public void setUpload(String upload) {
-		this.upload = upload;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
-	public List<MultipartFile> getFiles() {
-		return files;
-	}
+    public String getUpload() {
+        return upload;
+    }
 
-	public void setFiles(List<MultipartFile> files) {
-		this.files = files;
-	}
+    public void setUpload(String upload) {
+        this.upload = upload;
+    }
 
-	public int getReadcount() {
-		return readcount;
-	}
+    public List<MultipartFile> getFiles() {
+        return files;
+    }
 
-	public void setReadcount(int readcount) {
-		this.readcount = readcount;
-	}
+    public void setFiles(List<MultipartFile> files) {
+        this.files = files;
+    }
 
-	public int getRegroup() {
-		return regroup;
-	}
+    public int getReadcount() {
+        return readcount;
+    }
 
-	public void setRegroup(int regroup) {
-		this.regroup = regroup;
-	}
+    public void setReadcount(int readcount) {
+        this.readcount = readcount;
+    }
 
-	public int getRestep() {
-		return restep;
-	}
+    public int getRegroup() {
+        return regroup;
+    }
 
-	public void setRestep(int restep) {
-		this.restep = restep;
-	}
+    public void setRegroup(int regroup) {
+        this.regroup = regroup;
+    }
 
-	public int getRelevel() {
-		return relevel;
-	}
+    public int getRestep() {
+        return restep;
+    }
 
-	public void setRelevel(int relevel) {
-		this.relevel = relevel;
-	}
+    public void setRestep(int restep) {
+        this.restep = restep;
+    }
 
-	public Timestamp getWriteday() {
-		return writeday;
-	}
+    public int getRelevel() {
+        return relevel;
+    }
 
-	public void setWriteday(Timestamp writeday) {
-		this.writeday = writeday;
-	}
+    public void setRelevel(int relevel) {
+        this.relevel = relevel;
+    }
 
-	public boolean isImage(String filename) {
-		int dotIdx = filename.indexOf(".");
-		String ext = filename.substring(dotIdx + 1);
+    public Timestamp getWriteday() {
+        return writeday;
+    }
 
-		if (ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("jpeg")
-				|| ext.equalsIgnoreCase("gif")) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+    public void setWriteday(Timestamp writeday) {
+        this.writeday = writeday;
+    }
+
+    public boolean isImage(String filename) {
+        int dotIdx = filename.indexOf(".");
+        String ext = filename.substring(dotIdx + 1);
+
+        return ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("jpg")
+                || ext.equalsIgnoreCase("jpeg") || ext.equalsIgnoreCase("gif");
+    }
 
 }

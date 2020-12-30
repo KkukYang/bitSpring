@@ -58,6 +58,8 @@
 			<li><a href="${root}/member/addform">Join</a></li>
 			<li><a href="${root}/board/list">Board</a></li>
 			<li><a href="${root}/mycar/list">CarInfo</a></li>
+			<li><a href="${root}/munje">Rest문제</a></li>
+			<li><a href="${root}/mail">Mail</a></li>
 		</ul>
 	</div>
 
