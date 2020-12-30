@@ -30,7 +30,7 @@ public class HelloController {
         model.addObject("emp", "samsung");
         model.addObject("sawonname", "yang");
         model.addObject("pay", "123456");
-
+        //
         // set fileName to Forward.
         model.setViewName("result2");
         return model;
