@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--coss domain 에 필요한 js파일-->
+    <!--<script type="text/javascript" src="../js/jquery.ajax-cross-origin.min.js"></script>-->
+    <script type="module">
+        import shop, {Person} from "./my5.js";
+
+        let s = new shop("블라우스", 23000);
+        s.writeData();
+
+        let p = new Person("kim", 12);
+        p.writePerson();
+    </script>
+</head>
+<body>
+<h1>
+    test3.html
+</h1>
+</body>
+</html>
