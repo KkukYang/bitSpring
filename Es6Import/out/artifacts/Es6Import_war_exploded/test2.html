@@ -14,22 +14,20 @@
     <!--coss domain 에 필요한 js파일-->
     <!--<script type="text/javascript" src="../js/jquery.ajax-cross-origin.min.js"></script>-->
     <script type="module">
-        import ABC from "./my4.js";
+        //export default 로 보낸것은 import 시에 이름을 지정할수있음.
+        import data from "./my3.js";
 
-        console.log("ABC.area(2, 3) : " + ABC.area(2, 3));
+        console.log("age:", +data.age);
+        console.log("msg:", +data.msg);
 
 
-        import shop, {Person} from "./my5.js";
-        let s = new shop("블라우스", 23000);
-        s.writeData();
-
-        let p = new Person("kim", 12);
-        p.writePerson();
+        import {week} from "./my3.js";
+        week();
     </script>
 </head>
 <body>
 <h1>
-    test3.html
+    test2.html
 </h1>
 </body>
 </html>
