@@ -4,6 +4,25 @@ import java.sql.Timestamp;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+/**
+ * -- auto-generated definition
+ * create table reboard
+ * (
+ *     num       smallint auto_increment
+ *         primary key,
+ *     writer    varchar(20)        null,
+ *     pass      varchar(20)        null,
+ *     subject   varchar(1000)      null,
+ *     content   varchar(2000)      null,
+ *     upload    varchar(1000)      null,
+ *     readcount smallint default 0 null,
+ *     regroup   smallint           null,
+ *     restep    smallint           null,
+ *     relevel   smallint           null,
+ *     writeday  datetime           null
+ * );
+ */
+
 //@Data
 public class ReactBoardDto {
 	private String num;
@@ -14,9 +33,9 @@ public class ReactBoardDto {
 	private int readcount;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
 	private Timestamp writeday;
-	
-	
-	
+
+
+
 	public String getContent() {
 		return content;
 	}
@@ -59,7 +78,7 @@ public class ReactBoardDto {
 	public void setWriteday(Timestamp writeday) {
 		this.writeday = writeday;
 	}
-	
-	
-	
+
+
+
 }
